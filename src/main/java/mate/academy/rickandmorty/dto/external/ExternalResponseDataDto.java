@@ -10,6 +10,7 @@ import lombok.Setter;
 @Setter
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class ExternalResponseDataDto {
+    private ExternalMetaDataDto info;
     @JsonProperty(value = "results")
     private List<ExternalCharacterDataDto> characters;
 }
